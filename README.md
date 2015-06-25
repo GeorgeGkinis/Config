@@ -26,7 +26,7 @@ After the needed software has downloaded and installed and the necessary configu
 - after adding the server, double click on the Tomcat server in the 'Servers' view and set the following configuration: under 'Timeouts' set 'Start' to 600 and 'Stop' to 300
 - then click on 'Open launch configuration', click on the 'Arguments' tab and add the following at the end of the 'VM arguments' string: -Xms512m -Xmx2048m -Xss512k -XX:MaxPermSize=1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dcom.sun.management.jmxremote=true
 - create a symlink to the Maven setting file using this command: sudo ln -s /home/dev/Sources/Config/maven/settings.xml /home/dev/.m2
-- setup the Tomcat7 context.xml in the eclipse Servers folder, by copying the entries in /home/dev/Sources/Config/tomcat/context.xml to map configuration file names to file paths
+- setup the Tomcat7 context.xml in the eclipse Servers folder in the Project Explorer, by copying the entries in /home/dev/Sources/Config/tomcat/context.xml to map configuration file names to file paths. 
 - continue by adding the Maven Projects to the Tomcat server by right clicking on the Tomcat server and choosing 'Add and Remove', followed by clicking on the 'Add =All' button
 - at this point, eclipse's auto-build should have built the projects, and the Tomcat server has been setup
 
